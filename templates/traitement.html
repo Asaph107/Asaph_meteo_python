@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles1.css">
+    <title>Document</title>
+</head>
+<header>
+  <h1 id="LOGO"> ASAPHMETEO </h1> 
+</header>
+<body>
+
+  <style> 
+  #LOGO{
+    display: flex;
+    margin-left: 10px;
+    color: red;
+    margin-top: 10px;
+  }
+  h1{
+    margin-top: 20px;
+    color:  rgb(32, 1, 110);
+  }
+  
+  *{  margin: 0;
+      padding: 0;
+      background-color: #d1c9c9;
+      text-align: center;
+  }
+  .tableau-style{
+    border-collapse: collapse;
+    min-width: auto;
+    margin: 120px auto;
+    margin-top: 40px;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+    border: 2px solid rgb(32, 1, 110);
+  }
+
+  thead{
+    background-color: midnightblue;
+    color: aliceblue;
+  }
+
+  th, td{
+    padding: 10px 15px;
+  }
+
+  tbody, tr, td, th{
+    border: 1px solid #ddd;
+  }
+  </style>
+
+
+    {% if emplacement %}
+    <h1> les informations météorologiques de {{ ville }} </h1>
+    {% else %}
+    <h1> Un problème est survenu </h1>
+    {% endif %}
+
+
+    
+    {% if emplacement %}
+    <table class="tableau-style">
+        <tr>
+          <th>Monoxyde_de_carbones</th>
+          <th>Dioxyde_d_azotes</th>
+          <th>vitesse_du_vent</th>
+          <th>temperature</th>
+          <th>temperature_max</th>
+          <th>temperature_min</th>
+          <th>humidite</th>
+        </tr>
+        <tr>
+          <td>{{ emplacement[0] }}</td>
+          <td>{{ emplacement[1] }}</td>
+          <td>{{ emplacement[2] }}</td>
+          <td>{{ emplacement[3] }}</td>
+          <td>{{ emplacement[4] }}</td>
+          <td>{{ emplacement[5] }}</td>
+          <td>{{ emplacement[6] }}</td>
+        </tr>
+      </table>
+      {% else %}
+      <h1> Un problème est survenu </h1>
+    {% endif %}
+</body>
+</html> 

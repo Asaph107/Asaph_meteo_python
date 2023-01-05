@@ -1,0 +1,119 @@
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #d1c9c9;
+        }
+        header{
+            color: rgb(255, 8, 8);
+            height: 60px;
+
+        }
+        .entete{
+            background-color: rgb(227, 12, 12);
+        }
+
+        header h1{
+            float: left;
+            margin-top: 10px;
+        }
+
+        header nav{
+           float: right;
+           margin-top: 20px;
+        }
+
+        ul{
+            list-style: none;
+        }
+        
+
+        header nav ul li {
+            text-decoration: none;
+            display: inline;
+            margin-right: 30px;
+
+        }
+
+        #descr{
+            height: 200px;
+            border-top:groove;
+            
+        }
+
+        #descr h1{
+            position: relative;
+            float: left;
+            margin-top: 20px;
+            margin-right: 100px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transform: translate(50px,0);
+            color: rgb(32, 1, 110);
+            line-height: 50px;
+
+
+        }
+ 
+        #MonImage{
+           position: relative;
+            left: 1100px;
+            height: 200px;
+            width: 300px;
+            margin-right: 500px;
+
+            background-image: url(../image/im.jpg) ;  
+        }
+
+        a{
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bold;
+            color: rgba(5, 26, 211, 0.951);
+        }
+
+
+        a:hover{
+            color: rgb(23, 202, 202);
+        }
+
+        #LOGO{
+            transform: translate(50px, 0);
+            font-weight: bold;
+        }
+
+        form {
+            margin-top: 20px;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-left: 680px;   
+        }
+
+        input {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        label, button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-left: -200px;
+            border: 0px;
+            
+            }
+
+            #but{
+                text-decoration: none;
+
+                background-color: rgba(191, 23, 23, 0.758);
+                color: aliceblue;
+                border-radius: 9px;
+               border-top: none;
+            }
+
+            #but:hover {
+                background-color: rgb(191, 23, 23);;
+            }
+
+
+
+            
